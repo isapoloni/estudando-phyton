@@ -11,9 +11,9 @@ contador = 0
 while contador < pessoas: 
     contador = contador + 1
     print('=====================')
-    sexo = str(input('M/F: '))
+    sexo = str(input('M/F: ')).upper()
     idade = int(input('Idade:'))
-    resposta = str(input('S=sim, N=não, I=indiferente: '))
+    resposta = str(input('S=sim, N=não, I=indiferente: ')).upper()
 
     if resposta =='S':
         resps = resps + 1
@@ -30,7 +30,7 @@ while contador < pessoas:
     if sexo == 'F' and resposta == 'S':
         respfs = respfs + 1
     
-
+print('=====================')
 print('Quantas pessoas foram entrevistadas: {}'.format(pessoas))
 print('Quantas pessoas disseram sim: {}'.format(resps))
 print('Quantas pessoas disseram não: {}'.format(respn))
