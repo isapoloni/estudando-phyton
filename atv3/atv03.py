@@ -1,6 +1,8 @@
+
 print('-------Empresa cara de pau-------')
 pessoas = int(input('Quantas pessoas participaram do processo? :'))
 print('Certo! vamos cadastrar as respostas agora.')
+print('Observações:  O sexo e a resposta devem ser usados somente os caracteres pedidos, para que o sistema funcione!')
 
 resps = 0
 respn = 0
@@ -23,7 +25,7 @@ while contador < pessoas:
 
     elif resposta == 'I':
         respi = respi + 1
-
+    
     if sexo =='M' and resposta == 'N':
         respmn = respmn + 1
     
